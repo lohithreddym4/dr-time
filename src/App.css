@@ -6,7 +6,7 @@ html::-webkit-scrollbar {
 .navbar{
   z-index: 2;
   height:80px;
-  background-color: #E0F2FE;
+  background-color: #c5e8ff;
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
   display: flex;
   align-items: center;
@@ -33,14 +33,11 @@ html::-webkit-scrollbar {
 }
 .Nonelist{
   list-style-type: none;
-  
   display:flex;
   /* justify-content: flex-start; */
   flex-direction: column;
   align-items:start;
   padding-right: 40px;
-
-  
 }
 .Nonelist li>a,.Nonelist li>a>:visited{
   color: black;
@@ -94,14 +91,13 @@ a:hover{
 }
 
 .cat-1{
-  z-index: -1;
   left:0;
-  top:0px;
-  background-color:rgba(246, 231, 241, 0.503);
+  padding-top:0px;
+  background-color:rgb(248,248,248);
   width: 18vw;
   display:flex;
   flex-direction: column;
-  gap:40px;
+   gap:20px; 
   align-items:center;
   /* border-right: 1px #000000 solid ; */
   font-size: large;
@@ -110,16 +106,15 @@ a:hover{
   height: 82svh;
   position: fixed;
   left: 0;
-  margin-top: 155px; 
+  /* margin-top: 155px;  */
 }
 .cat-1>div a{
   color:rgba(70, 214, 227, 0.784);
   font-size:28px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 700;
-  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: white;
-  
 }
 .cat-1>div a:hover{
   color:rgb(239, 72, 72);
@@ -132,13 +127,24 @@ a:hover{
   position: sticky;
   display: flex;
   align-items: right;
-  justify-content: space-around;
+  justify-content: space-between;
   height:70px;
-  border:solid black 1px;
-  background-color: rgba(246, 231, 241, 0.503);
+  border:solid black 0px;
+  background-color: #e4f2fa;
 }
 .location{
-
+  margin-top:15px;
+  padding-left: 20px;
+  
+}
+.location select{
+  padding-left:30px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  border:solid white 0.5px;
+  border-radius: 15px;
+  height:40px;
+  width:190px;
 }
 .search-bar{
   /* padding-top: 22px; */
