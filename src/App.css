@@ -89,88 +89,101 @@ a:hover{
   display: flex;
   align-items:flex-end;
 }
-
-.cat-1{
-  left:0;
-  padding-top:0px;
-  background-color:rgb(248,248,248);
-  width: 18vw;
-  display:flex;
-  flex-direction: column;
-   gap:20px; 
-  align-items:center;
-  /* border-right: 1px #000000 solid ; */
-  font-size: large;
-  font: bold;
-  overflow-y: scroll; 
-  height: 82svh;
-  position: fixed;
-  left: 0;
-  /* margin-top: 155px;  */
+.flex{
+  display: flex;
 }
-.cat-1>div a{
-  color:rgba(70, 214, 227, 0.784);
-  font-size:28px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
-   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-}
-.cat-1>div a:hover{
-  color:rgb(239, 72, 72);
-}
-.cat-1::-webkit-scrollbar {
-  display: none;
-}
-
 .search-nav{
   position: sticky;
   display: flex;
-  align-items: right;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   height:70px;
-  border:solid black 0px;
+  border:solid rgb(219, 219, 219) 1px;
   background-color: #e4f2fa;
 }
-.location{
-  margin-top:15px;
-  padding-left: 20px;
-  
-}
-.location select{
-  padding-left:30px; 
+.inner-loc{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding:10px;
   font-size: medium;
-  border:solid white 0.5px;
   border-radius: 15px;
-  height:40px;
-  width:190px;
+  border: solid 1px rgb(197, 197, 197);
+  background-color:white ;
+}
+.inner-loc span i{
+  color:#2C77BB
+
+
+}
+.no-show{
+  border:none;
+  cursor: pointer;
+  outline: none;
+  height: 100%;
+  width:100px;
+  color: #000000;
+  text-decoration: underline rgba(255, 0, 0, 0.571) ;
+  font-weight: bolder;
+  font-size: medium;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .search-bar{
   /* padding-top: 22px; */
   background-color: #E0F2FE;
   width:640px;
   height:40px;
-  margin-top:14px;
   display: flex;
-  justify-content: space-between;
-  border:solid black 0px;
+  justify-content: space-around;
   border-radius: 15px; 
   /* border-end-end-radius: 5px; */
 }
+.search-bar{
+  border: solid 1px rgb(197, 197, 197);
+
+}
+.search-bar button{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.no-show option {
+  height:20px;
+  font-size: medium;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+option:not(:checked) {
+  background-color: #E0F2FE;
+  color:black;
+}
+option{
+  font-weight: 700;
+}
+option:checked{
+  background-color: #E0F2FE;
+  color:rgb(255, 80, 109);
+}
 .search-bar input{
-  width:572px;
-  border:solid white 0.5px;
-  height:36.5px;
+  border:none;
+  width:100%;
+  outline: none;
   padding-left: 30px;
   border-top-left-radius:15px ;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
-.search-bar i{
-  margin-top: 12px;
-  margin-right:9.8px
+.search-bar:hover{
+  border:  solid orange 1px;
+}
+
+.mag-glass{
+  width:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2C77BB;
+  border-left:solid #2C77BB 1px ;
 }
 .fixed{
   position: sticky;
@@ -225,3 +238,46 @@ a:hover{
 
 
 }
+/******************/
+
+.slider-t{
+  position:absolute ;
+  max-width: 48rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider{
+  display: flex;
+  width:100%;
+  aspect-ratio:16/9;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.slider img{
+  flex:1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+.slider-nav{
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left:50%;
+  transform: translate(-50%);
+}
+.slider-nav a{
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+
+
+/*ikkada nu em cheyalante 5 divs create chey okokkadaniki oka class name iyyi inka vaatiki ee propertirs vaadu ra*/
+/* kaani manam itla kadhu ra thai pettedhi etla ante */
+
+/* rey itla div ki backround lo petti chey lera */
