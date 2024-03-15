@@ -20,9 +20,9 @@ function Navbar() {
                 </div>
 
                 <div className='options'>
-                    <Link to=''>Home</Link>
-                    <Link to=''>Contact us</Link>
-                    <Link to=''>About</Link>
+                    <Link to='/'>Home</Link>
+                    <Link to='/contact-us'>Contact us</Link>
+                    <Link to='/about'>About</Link>
                 </div>
             </div>
             <div className="Profileout">
