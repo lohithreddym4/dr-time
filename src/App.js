@@ -7,14 +7,13 @@ import Home from './components/Home';
 function App() {
   return (
     <div>
-    <BrowserRouter>
-    <div className='fixed'>
-    <Navbar/>
-      <SearchNav/>
-    </div>
-      <Home/>
-    </BrowserRouter>
-    
+      <BrowserRouter>
+        <div className='fixed'>
+          <Navbar />
+          <SearchNav />
+        </div>
+        <Home />
+      </BrowserRouter>
     </div>
   );
 }
